@@ -1,0 +1,85 @@
+{
+  "brandName": "KIDZZ LEELA",
+  "tagline": "Where Every Little One Shines ✨",
+  "logo": {
+    "icon": "🌱",
+    "logoImage": "../assets/logo.png",
+    "showText": true
+  },
+  "hero": {
+    "heading": "Adorable Styles for Your Little Stars",
+    "subheading": "Discover playful, comfortable, and colorful clothing that lets kids be kids. Made with love for ages 0-12.",
+    "primaryButtonText": "Shop Collections",
+    "secondaryButtonText": "View Offers",
+    "backgroundImage": "/hero-bg.jpg"
+  },
+  "navigation": [
+    { "label": "Home", "path": "/" },
+    { "label": "Collections", "path": "/collections" },
+    { "label": "Offers", "path": "/offers" }
+  ],
+  "features": [
+    {
+      "icon": "🧸",
+      "title": "Soft & Comfy",
+      "description": "100% cotton and gentle fabrics for sensitive skin"
+    },
+    {
+      "icon": "🎨",
+      "title": "Fun Designs",
+      "description": "Vibrant colors and playful patterns kids love"
+    },
+    {
+      "icon": "💪",
+      "title": "Built to Last",
+      "description": "Durable stitching that survives playtime adventures"
+    },
+    {
+      "icon": "🌍",
+      "title": "Eco-Friendly",
+      "description": "Sustainable materials for a better tomorrow"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Savita M.",
+      "avatar": "👩",
+      "rating": 5,
+      "text": "My daughter absolutely loves her new dresses! The quality is amazing and the colors haven't faded after many washes.",
+      "childAge": "Mom of 5-year-old"
+    },
+    {
+      "name": "Mahesh",
+      "avatar": "👨",
+      "rating": 5,
+      "text": "Finally found clothes that are both stylish and durable enough for my active boys. Highly recommend!",
+      "childAge": "Dad of twins, age 7"
+    },
+    {
+      "name": "Anita",
+      "avatar": "👩‍🦰",
+      "rating": 5,
+      "text": "The infant collection is so soft and gentle. Perfect for my newborn's sensitive skin.",
+      "childAge": "Mom of 3-month-old"
+    }
+  ],
+  "footer": {
+    "copyright": "© 2026 KIDZZ LEELA. All rights reserved.",
+    "tagline": "Dressing little dreams since 2025",
+    "socialLinks": [
+      { "platform": "Instagram", "icon": "📸", "url": "#" },
+      { "platform": "Facebook", "icon": "👍", "url": "#" },
+      { "platform": "Pinterest", "icon": "📌", "url": "#" }
+    ],
+    "contact": {
+      "email": "hello@kidzzleela.com",
+      "phone": "+1 (555) 123-4567"
+    }
+  },
+  "newsletter": {
+    "heading": "Join the KIDZZ LEELA Family!",
+    "subheading": "Get 15% off your first order + exclusive access to new arrivals",
+    "buttonText": "Subscribe",
+    "placeholder": "Enter your email"
+  }
+}

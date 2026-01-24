@@ -1,0 +1,76 @@
+{
+  "bannerOffer": {
+    "title": "Spring Sale! 🌸",
+    "description": "Up to 40% off on all spring collections",
+    "code": "SPRING40",
+    "active": true
+  },
+  "offers": [
+    {
+      "id": "offer-1",
+      "title": "New Customer Welcome",
+      "description": "Get 20% off your first purchase! Join thousands of happy parents shopping with us.",
+      "discountPercentage": 20,
+      "code": "WELCOME20",
+      "validUntil": "2026-12-31",
+      "active": true,
+      "badge": "🎉 New",
+      "color": "primary"
+    },
+    {
+      "id": "offer-2",
+      "title": "Bundle & Save",
+      "description": "Buy 3 items from any collection and get the 4th one absolutely free!",
+      "discountPercentage": 25,
+      "code": "BUNDLE4",
+      "validUntil": "2026-06-30",
+      "active": true,
+      "badge": "⭐ Popular",
+      "color": "secondary"
+    },
+    {
+      "id": "offer-3",
+      "title": "Back to School Special",
+      "description": "Prepare for the new school year with 30% off all uniforms and basics.",
+      "discountPercentage": 30,
+      "code": "SCHOOL30",
+      "validUntil": "2026-09-15",
+      "active": true,
+      "badge": "📚 Seasonal",
+      "color": "teal"
+    },
+    {
+      "id": "offer-4",
+      "title": "Sibling Discount",
+      "description": "Shopping for multiple kids? Get 15% off when you buy for 2+ children.",
+      "discountPercentage": 15,
+      "code": "SIBLINGS15",
+      "validUntil": "2026-12-31",
+      "active": true,
+      "badge": "👧👦 Family",
+      "color": "lavender"
+    },
+    {
+      "id": "offer-5",
+      "title": "Flash Friday",
+      "description": "Every Friday, enjoy an extra 10% off on already discounted items!",
+      "discountPercentage": 10,
+      "code": "FLASH10",
+      "validUntil": "2026-12-31",
+      "active": false,
+      "badge": "⚡ Weekly",
+      "color": "orange"
+    },
+    {
+      "id": "offer-6",
+      "title": "Birthday Club",
+      "description": "Sign up for our birthday club and receive a special 25% discount during your child's birthday month!",
+      "discountPercentage": 25,
+      "code": "BDAY25",
+      "validUntil": "2026-12-31",
+      "active": true,
+      "badge": "🎂 Special",
+      "color": "primary"
+    }
+  ]
+}

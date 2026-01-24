@@ -1,0 +1,178 @@
+{
+  "categories": [
+    {
+      "id": "boys",
+      "name": "Boys Collection",
+      "description": "Cool and comfortable styles for adventurous boys",
+      "icon": "👦",
+      "color": "teal",
+      "featured": true,
+      "products": [
+        {
+          "id": "boys-1",
+          "name": "Dino Explorer Tee",
+          "price": 24.99,
+          "originalPrice": 34.99,
+          "discountLabel": "29% OFF",
+          "image": "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=400&h=400&fit=crop",
+          "sizes": ["2T", "3T", "4T", "5", "6", "7"],
+          "colors": ["Blue", "Green", "Orange"],
+          "isNew": true,
+          "isBestSeller": false
+        },
+        {
+          "id": "boys-2",
+          "name": "Space Adventure Hoodie",
+          "price": 39.99,
+          "originalPrice": null,
+          "discountLabel": null,
+          "image": "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=400&h=400&fit=crop",
+          "sizes": ["3T", "4T", "5", "6", "7", "8"],
+          "colors": ["Navy", "Gray", "Black"],
+          "isNew": false,
+          "isBestSeller": true
+        },
+        {
+          "id": "boys-3",
+          "name": "Comfy Cargo Shorts",
+          "price": 22.99,
+          "originalPrice": 28.99,
+          "discountLabel": "20% OFF",
+          "image": "https://images.unsplash.com/photo-1560506840-ec148e82a604?w=400&h=400&fit=crop",
+          "sizes": ["2T", "3T", "4T", "5", "6"],
+          "colors": ["Khaki", "Navy", "Olive"],
+          "isNew": false,
+          "isBestSeller": false
+        },
+        {
+          "id": "boys-4",
+          "name": "Striped Polo Shirt",
+          "price": 27.99,
+          "originalPrice": null,
+          "discountLabel": null,
+          "image": "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?w=400&h=400&fit=crop",
+          "sizes": ["4T", "5", "6", "7", "8"],
+          "colors": ["Red/White", "Blue/White", "Green/White"],
+          "isNew": true,
+          "isBestSeller": false
+        }
+      ]
+    },
+    {
+      "id": "girls",
+      "name": "Girls Collection",
+      "description": "Sparkly, fun, and fabulous outfits for little princesses",
+      "icon": "👧",
+      "color": "primary",
+      "featured": true,
+      "products": [
+        {
+          "id": "girls-1",
+          "name": "Rainbow Twirl Dress",
+          "price": 34.99,
+          "originalPrice": 44.99,
+          "discountLabel": "22% OFF",
+          "image": "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?w=400&h=400&fit=crop",
+          "sizes": ["2T", "3T", "4T", "5", "6"],
+          "colors": ["Rainbow", "Pink", "Purple"],
+          "isNew": false,
+          "isBestSeller": true
+        },
+        {
+          "id": "girls-2",
+          "name": "Floral Summer Set",
+          "price": 32.99,
+          "originalPrice": null,
+          "discountLabel": null,
+          "image": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=400&h=400&fit=crop",
+          "sizes": ["2T", "3T", "4T", "5", "6", "7"],
+          "colors": ["Pink Floral", "Blue Floral", "Yellow Floral"],
+          "isNew": true,
+          "isBestSeller": false
+        },
+        {
+          "id": "girls-3",
+          "name": "Sparkle Unicorn Tee",
+          "price": 19.99,
+          "originalPrice": 24.99,
+          "discountLabel": "20% OFF",
+          "image": "https://images.unsplash.com/photo-1471286174890-9c112ffca5b4?w=400&h=400&fit=crop",
+          "sizes": ["2T", "3T", "4T", "5", "6"],
+          "colors": ["White", "Pink", "Lavender"],
+          "isNew": false,
+          "isBestSeller": true
+        },
+        {
+          "id": "girls-4",
+          "name": "Cozy Cardigan",
+          "price": 36.99,
+          "originalPrice": null,
+          "discountLabel": null,
+          "image": "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=400&h=400&fit=crop",
+          "sizes": ["3T", "4T", "5", "6", "7", "8"],
+          "colors": ["Cream", "Blush", "Mint"],
+          "isNew": true,
+          "isBestSeller": false
+        }
+      ]
+    },
+    {
+      "id": "infants",
+      "name": "Infants Collection",
+      "description": "Super soft essentials for your precious little ones",
+      "icon": "👶",
+      "color": "lavender",
+      "featured": true,
+      "products": [
+        {
+          "id": "infants-1",
+          "name": "Organic Cotton Onesie Set",
+          "price": 29.99,
+          "originalPrice": 39.99,
+          "discountLabel": "25% OFF",
+          "image": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=400&h=400&fit=crop",
+          "sizes": ["0-3M", "3-6M", "6-9M", "9-12M"],
+          "colors": ["White", "Cream", "Sage"],
+          "isNew": false,
+          "isBestSeller": true
+        },
+        {
+          "id": "infants-2",
+          "name": "Bunny Ears Romper",
+          "price": 26.99,
+          "originalPrice": null,
+          "discountLabel": null,
+          "image": "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=400&h=400&fit=crop",
+          "sizes": ["0-3M", "3-6M", "6-9M", "9-12M", "12-18M"],
+          "colors": ["Pink", "Gray", "White"],
+          "isNew": true,
+          "isBestSeller": false
+        },
+        {
+          "id": "infants-3",
+          "name": "Snuggle Sleep Sack",
+          "price": 34.99,
+          "originalPrice": 42.99,
+          "discountLabel": "19% OFF",
+          "image": "https://images.unsplash.com/photo-1560506840-ec148e82a604?w=400&h=400&fit=crop",
+          "sizes": ["0-6M", "6-12M", "12-18M"],
+          "colors": ["Stars", "Clouds", "Animals"],
+          "isNew": false,
+          "isBestSeller": false
+        },
+        {
+          "id": "infants-4",
+          "name": "First Steps Booties",
+          "price": 18.99,
+          "originalPrice": null,
+          "discountLabel": null,
+          "image": "https://images.unsplash.com/photo-1471286174890-9c112ffca5b4?w=400&h=400&fit=crop",
+          "sizes": ["0-6M", "6-12M"],
+          "colors": ["Cream", "Gray", "Brown"],
+          "isNew": true,
+          "isBestSeller": true
+        }
+      ]
+    }
+  ]
+}
