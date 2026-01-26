@@ -1,18 +1,3 @@
-/**
- * Collections Page
- * 
- * Displays all product collections from config/collections.json.
- * Organized by category (Boys, Girls, Infants).
- * 
- * Features:
- * - Category tabs/filters
- * - Responsive product grid
- * - ProductCard components
- * 
- * To add new categories or products:
- * - Edit collections.json
- */
-
 import { useState } from 'react';
 import ProductCard from '@/components/ProductCard';
 import collectionsData from '@/config/collections.json';

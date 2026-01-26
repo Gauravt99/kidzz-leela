@@ -1,13 +1,18 @@
+import { useState } from 'react';
 import siteContent from '@/config/siteContent.json';
+
+interface SizeVariant {
+  size: string;
+  price: number;
+  originalPrice: number | null;
+  discountLabel: string | null;
+}
 
 interface Product {
   id: string;
   name: string;
-  price: number;
-  originalPrice: number | null;
-  discountLabel: string | null;
   image: string;
-  sizes: string[];
+  sizeVariants: SizeVariant[];
   colors: string[];
   isNew: boolean;
   isBestSeller: boolean;
@@ -41,14 +46,15 @@ const WhatsAppIcon = ({ className = "" }: { className?: string }) => (
 const ProductCard = ({ product }: ProductCardProps) => {
   const {
     name,
-    price,
-    originalPrice,
-    discountLabel,
     image,
-    sizes,
+    sizeVariants,
     isNew,
     isBestSeller,
   } = product;
+
+  const [selectedSize, setSelectedSize] = useState<string>(sizeVariants[0]?.size || ''); 
+  const currentVariant = sizeVariants.find(v => v.size === selectedSize) || sizeVariants[0];
+  const { price, originalPrice, discountLabel } = currentVariant;
 
   return (
     <article className="card-playful group cursor-pointer">
@@ -128,20 +134,23 @@ const ProductCard = ({ product }: ProductCardProps) => {
         </div>
 
         {/* Available sizes */}
-        <div className="flex flex-wrap gap-1">
-          {sizes.slice(0, 5).map((size) => (
-            <span
-              key={size}
-              className="text-xs px-2 py-1 bg-muted rounded-md text-muted-foreground"
+        <div className="flex flex-wrap gap-2">
+          {sizeVariants.map((variant) => (
+            <button
+              key={variant.size}
+              onClick={() => setSelectedSize(variant.size)}
+              className={`
+                text-xs px-3 py-2 rounded-md font-medium
+                transition-all duration-200 cursor-pointer
+                ${selectedSize === variant.size
+                  ? 'bg-primary text-primary-foreground shadow-md'
+                  : 'bg-muted text-muted-foreground hover:bg-accent'
+                }
+              `}
             >
-              {size}
-            </span>
+              {variant.size}
+            </button>
           ))}
-          {sizes.length > 5 && (
-            <span className="text-xs px-2 py-1 text-muted-foreground">
-              +{sizes.length - 5}
-            </span>
-          )}
         </div>
       </div>
     </article>
