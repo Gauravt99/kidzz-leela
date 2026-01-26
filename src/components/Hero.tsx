@@ -10,7 +10,7 @@ const Hero = () => {
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* Background with gradient overlay */}
       <div className="absolute inset-0 bg-gradient-hero">
-        <div 
+        <div
           className="absolute inset-0 opacity-20"
           style={{
             backgroundImage: `url(${heroImage})`,
@@ -19,13 +19,13 @@ const Hero = () => {
           }}
         />
       </div>
-      
+
       {/* Decorative elements */}
       <div className="absolute top-20 left-10 text-6xl animate-float opacity-60">🧸</div>
       <div className="absolute top-40 right-20 text-5xl animate-float opacity-60" style={{ animationDelay: '1s' }}>⭐</div>
       <div className="absolute bottom-32 left-20 text-4xl animate-float opacity-60" style={{ animationDelay: '2s' }}>🎈</div>
       <div className="absolute bottom-20 right-32 text-6xl animate-float opacity-60" style={{ animationDelay: '0.5s' }}>🌈</div>
-      
+
       {/* Content */}
       <div className="container relative z-10">
         <div className="max-w-3xl mx-auto text-center px-4">
@@ -35,25 +35,33 @@ const Hero = () => {
             <img src={pngLogo} alt="Logo" className="h-10 w-10"/>
             <span className="font-heading font-semibold text-foreground">{brandName}</span>
           </div>
-          
+
+          {/* Tagline */}
+          <p
+            className="font-heading text-xl md:text-2xl text-foreground/80 mb-6 animate-fade-in"
+            style={{ animationDelay: "0.05s" }}
+          >
+            {hero.tagline}
+          </p>
+
           {/* Main heading */}
-          <h1 
+          <h1
             className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6 animate-fade-in"
             style={{ animationDelay: '0.1s' }}
           >
             {hero.heading}
           </h1>
-          
+
           {/* Subheading */}
-          <p 
+          <p
             className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto animate-fade-in"
             style={{ animationDelay: '0.2s' }}
           >
             {hero.subheading}
           </p>
-          
+
           {/* CTA Buttons */}
-          <div 
+          <div
             className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in"
             style={{ animationDelay: '0.3s' }}
           >
@@ -65,9 +73,9 @@ const Hero = () => {
               {hero.secondaryButtonText}
             </Link>
           </div>
-          
+
           {/* Trust indicators */}
-          <div 
+          <div
             className="mt-16 flex flex-wrap justify-center gap-8 animate-fade-in"
             style={{ animationDelay: '0.4s' }}
           >

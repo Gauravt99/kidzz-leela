@@ -1,16 +1,3 @@
-/**
- * Home Page
- * 
- * Landing page featuring:
- * - Hero section (Hero.jsx)
- * - Offer banner (OfferBanner.jsx)
- * - Featured collections with ProductCard.jsx
- * - Features section
- * - Testimonials
- * 
- * All content from config files - no hardcoded text.
- */
-
 import Hero from '@/components/Hero';
 import OfferBanner from '@/components/OfferBanner';
 import ProductCard from '@/components/ProductCard';
@@ -23,7 +10,7 @@ const Home = () => {
   const { categories } = collectionsData;
 
   // Get featured categories
-  const featuredCategories = categories.filter(cat => cat.featured);
+  const featuredCategories = categories.filter(cat => cat.featured);  
 
   return (
     <main>
