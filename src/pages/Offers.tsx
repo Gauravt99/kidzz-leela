@@ -1,20 +1,3 @@
-/**
- * Offers Page
- * 
- * Displays all promotional offers from config/offers.json.
- * Only shows offers with active: true.
- * 
- * Features:
- * - Visual offer cards with discount badges
- * - Promo codes
- * - Expiration dates
- * - 🎉 Confetti animation on card click!
- * 
- * To add/update offers:
- * - Edit offers.json
- * - Set active: true/false to show/hide
- */
-
 import { useCallback } from 'react';
 import confetti from 'canvas-confetti';
 import offersData from '@/config/offers.json';
@@ -24,8 +7,8 @@ const Offers = () => {
   const { offers, bannerOffer } = offersData;
   
   // Filter to show only active offers
-  const activeOffers = offers.filter(offer => offer.active);
-  const inactiveOffers = offers.filter(offer => !offer.active);
+  const activeOffers = offers.filter(offer => offer.active && !offer.comingSoon);
+  const inactiveOffers = offers.filter(offer => !offer.active && offer.comingSoon);
 
   /**
    * Trigger confetti animation from the clicked card
@@ -88,11 +71,12 @@ const Offers = () => {
             Special Offers
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover amazing deals and save big on adorable outfits for your little ones!
+            Discover amazing deals and save big on adorable outfits for your
+            little ones!
           </p>
         </div>
       </section>
-      
+
       {/* Featured Banner Offer */}
       {bannerOffer.active && (
         <section className="py-8 bg-gradient-primary">
@@ -102,19 +86,25 @@ const Offers = () => {
                 <h2 className="text-2xl font-heading font-bold mb-1">
                   🌟 Featured Deal: {bannerOffer.title}
                 </h2>
-                <p className="text-primary-foreground/90">
-                  {bannerOffer.description}
-                </p>
+                {bannerOffer.description && (
+                  <p className="text-primary-foreground/90">
+                    {bannerOffer.description}
+                  </p>
+                )}
               </div>
-              <div className="bg-primary-foreground/20 backdrop-blur-sm px-6 py-3 rounded-xl">
-                <span className="text-sm opacity-80">Use code:</span>
-                <span className="ml-2 font-bold text-xl">{bannerOffer.code}</span>
-              </div>
+              {bannerOffer.code && (
+                <div className="bg-primary-foreground/20 backdrop-blur-sm px-6 py-3 rounded-xl">
+                  <span className="text-sm opacity-80">Use code:</span>
+                  <span className="ml-2 font-bold text-xl">
+                    {bannerOffer.code}
+                  </span>
+                </div>
+              )}
             </div>
           </div>
         </section>
       )}
-      
+
       {/* Active Offers Grid */}
       <section className="py-16">
         <div className="container">
@@ -122,50 +112,83 @@ const Offers = () => {
             <span>✨</span>
             Active Offers ({activeOffers.length})
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {activeOffers.map((offer, index) => (
-              <article 
+              <article
                 key={offer.id}
                 onClick={triggerConfetti}
-                className={`rounded-3xl overflow-hidden animate-fade-in cursor-pointer transform transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] ${getGradientClass(offer.color)}`}
+                className={`relative rounded-3xl overflow-hidden animate-fade-in cursor-pointer transform transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] ${getGradientClass(offer.color)}`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className={`p-6 h-full flex flex-col ${getTextClass(offer.color)}`}>
-                  {/* Badge */}
-                  <span className="inline-flex self-start items-center px-3 py-1 rounded-full text-xs font-bold bg-white/20 backdrop-blur-sm mb-4">
-                    {offer.badge}
+                {offer.limitedTime && (
+                  <span className="absolute top-6 right-3 z-10 inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-rose-600 text-white">
+                    Limited Time
                   </span>
-                  
-                  {/* Discount */}
-                  <div className="text-5xl md:text-6xl font-heading font-bold mb-2">
-                    {offer.discountPercentage}%
-                    <span className="text-2xl ml-1">OFF</span>
-                  </div>
-                  
-                  {/* Title */}
-                  <h3 className="text-xl font-heading font-semibold mb-2">
-                    {offer.title}
-                  </h3>
-                  
-                  {/* Description */}
-                  <p className={`mb-6 flex-1 ${offer.color === 'secondary' ? 'text-foreground/70' : 'opacity-90'}`}>
-                    {offer.description}
-                  </p>
-                  
-                  {/* Code & Validity */}
-                  <div className="space-y-3">
-                    <div className="bg-white/20 backdrop-blur-sm rounded-xl px-4 py-3 flex items-center justify-between">
-                      <span className="text-sm opacity-80">Code:</span>
-                      <span className="font-bold text-lg font-mono">{offer.code}</span>
+                )}
+
+                <div
+                  className={`p-6 h-full flex flex-col ${getTextClass(offer.color)}`}
+                >
+                  {offer.badge && (
+                    <div className="mb-4">
+                      <span className="inline-flex self-start items-center px-3 py-1 rounded-full text-xs font-bold bg-white/20 backdrop-blur-sm">
+                        {offer.badge}
+                      </span>
                     </div>
-                    <p className={`text-sm ${offer.color === 'secondary' ? 'text-foreground/60' : 'opacity-70'}`}>
-                      Valid until {new Date(offer.validUntil).toLocaleDateString('en-US', {
-                        month: 'long',
-                        day: 'numeric',
-                        year: 'numeric'
-                      })}
+                  )}
+
+                  {offer.discountPercentage != null &&
+                    offer.discountPercentage >= 0 && (
+                      <div className="text-5xl md:text-6xl font-heading font-bold mb-2">
+                        {offer.discountPercentage}%
+                        <span className="text-2xl ml-1">OFF</span>
+                      </div>
+                    )}
+
+                  {offer.title && (
+                    <h3 className="text-xl font-heading font-semibold mb-2">
+                      {offer.title}
+                    </h3>
+                  )}
+
+                  {offer.description && (
+                    <p
+                      className={`mb-6 flex-1 ${offer.color === "secondary" ? "text-foreground/70" : "opacity-90"}`}
+                    >
+                      {offer.description}
                     </p>
+                  )}
+
+                  <div className="space-y-3">
+                    {offer.code && (
+                      <div className="bg-white/20 backdrop-blur-sm rounded-xl px-4 py-3 flex items-center justify-between">
+                        <span className="text-sm opacity-80">Code:</span>
+                        <span className="font-bold text-lg font-mono">
+                          {offer.code}
+                        </span>
+                      </div>
+                    )}
+                    {offer.validUntil && (
+                      <p
+                        className={`text-sm ${offer.color === "secondary" ? "text-foreground/60" : "opacity-70"}`}
+                      >
+                        Valid until{" "}
+                        {new Date(offer.validUntil).toLocaleDateString(
+                          "en-US",
+                          {
+                            month: "long",
+                            day: "numeric",
+                            year: "numeric",
+                          },
+                        )}
+                      </p>
+                    )}
+                    {offer.tcApply && (
+                      <p className={`text-xs ${offer.color === "secondary" ? "text-foreground/50" : "opacity-60"}`}>
+                        T&C Apply
+                      </p>
+                    )}
                   </div>
                 </div>
               </article>
@@ -173,7 +196,7 @@ const Offers = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Inactive Offers (Coming Soon) */}
       {inactiveOffers.length > 0 && (
         <section className="py-16 bg-muted/50">
@@ -182,36 +205,58 @@ const Offers = () => {
               <span>⏰</span>
               Coming Soon ({inactiveOffers.length})
             </h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {inactiveOffers.map((offer, index) => (
-                <article 
+                <article
                   key={offer.id}
-                  className="card-playful p-6 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300 animate-fade-in"
+                  className="relative card-playful p-6 opacity-75 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300 animate-fade-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-muted text-muted-foreground mb-4">
-                    {offer.badge}
-                  </span>
-                  
-                  <div className="text-4xl font-heading font-bold text-muted-foreground mb-2">
-                    {offer.discountPercentage}% OFF
-                  </div>
-                  
-                  <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
-                    {offer.title}
-                  </h3>
-                  
-                  <p className="text-sm text-muted-foreground">
-                    {offer.description}
-                  </p>
+                  {offer.limitedTime && (
+                    <span className="absolute top-6 right-3 z-10 inline-flex items-center px-2 py-0.5 rounded-full text-xs font-semibold bg-rose-600 text-white">
+                      Limited Time
+                    </span>
+                  )}
+
+                  {offer.badge && (
+                    <div className="mb-4">
+                      <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-muted text-muted-foreground">
+                        {offer.badge}
+                      </span>
+                    </div>
+                  )}
+
+                  {offer.discountPercentage != null &&
+                    offer.discountPercentage >= 0 && (
+                      <div className="text-4xl font-heading font-bold text-muted-foreground mb-2">
+                        {offer.discountPercentage}% OFF
+                      </div>
+                    )}
+
+                  {offer.title && (
+                    <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
+                      {offer.title}
+                    </h3>
+                  )}
+
+                  {offer.description && (
+                    <p className="text-sm text-muted-foreground">
+                      {offer.description}
+                    </p>
+                  )}
+                  {offer.tcApply && (
+                    <p className="text-xs text-muted-foreground/60 mt-4">
+                      T&C Apply
+                    </p>
+                  )}
                 </article>
               ))}
             </div>
           </div>
         </section>
       )}
-      
+
       {/* CTA */}
       <section className="py-16 bg-gradient-secondary">
         <div className="container text-center">

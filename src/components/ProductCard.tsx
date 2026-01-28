@@ -63,8 +63,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
         <img
           src={image}
           alt={name}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-        />
+          // className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+        /> 
 
         {/* WhatsApp Button */}
         <a
@@ -135,22 +136,24 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
         {/* Available sizes */}
         <div className="flex flex-wrap gap-2">
-          {sizeVariants.map((variant) => (
-            <button
-              key={variant.size}
-              onClick={() => setSelectedSize(variant.size)}
-              className={`
-                text-xs px-3 py-2 rounded-md font-medium
-                transition-all duration-200 cursor-pointer
+          {sizeVariants.map((variant) =>
+            variant.size ? (
+              <button
+                key={variant.size}
+                onClick={() => setSelectedSize(variant.size)}
+                className={`
+                 text-xs px-3 py-2 rounded-md font-medium
+                 transition-all duration-200 cursor-pointer
                 ${selectedSize === variant.size
                   ? 'bg-primary text-primary-foreground shadow-md'
                   : 'bg-muted text-muted-foreground hover:bg-accent'
-                }
-              `}
-            >
-              {variant.size}
-            </button>
-          ))}
+                 }
+               `}
+              >
+                {variant.size}
+              </button>
+            ) : null,
+          )}
         </div>
       </div>
     </article>

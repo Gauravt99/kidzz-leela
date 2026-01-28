@@ -1,43 +1,52 @@
 {
   "bannerOffer": {
-    "title": "Spring Sale! 🌸",
-    "description": "Up to 40% off on all spring collections",
-    "code": "SPRING40",
+    "title": "Summer Sale! 🌸",
+    "description": "Up to 10% off on all summer collections",
+    "code": "SUMMER10",
     "active": true
   },
   "offers": [
     {
       "id": "offer-1",
-      "title": "New Customer Welcome",
-      "description": "Get 20% off your first purchase! Join thousands of happy parents shopping with us.",
-      "discountPercentage": 20,
-      "code": "WELCOME20",
-      "validUntil": "2026-12-31",
+      "title": "On purchase of ₹5,100",
+      "description": "Get a FREE 999 pure silver coin with your purchase. A special festive gift for your little one.",
+      "discountPercentage": null,
+      "code": null,
+      "validUntil": null,
+      "limitedTime": true,
       "active": true,
-      "badge": "🎉 New",
-      "color": "primary"
+      "comingSoon": false,
+      "badge": "💎 FREE Silver Coin",
+      "color": "lavender",
+      "tcApply": true
     },
     {
       "id": "offer-2",
-      "title": "Bundle & Save",
-      "description": "Buy 3 items from any collection and get the 4th one absolutely free!",
-      "discountPercentage": 25,
-      "code": "BUNDLE4",
-      "validUntil": "2026-06-30",
+      "title": "Wedding season special offer for your beloved babies",
+      "description": "Buy and get a pure silver coin – an auspicious and memorable gift.",
+      "discountPercentage": null,
+      "code": null,
+      "validUntil": null,
+      "limitedTime": true,
       "active": true,
-      "badge": "⭐ Popular",
-      "color": "secondary"
+      "comingSoon": false,
+      "badge": "👶 Special Gift",
+      "color": "secondary",
+      "tcApply": true
     },
     {
       "id": "offer-3",
-      "title": "Back to School Special",
-      "description": "Prepare for the new school year with 30% off all uniforms and basics.",
-      "discountPercentage": 30,
-      "code": "SCHOOL30",
-      "validUntil": "2026-09-15",
+      "title": "On purchase of ₹1,499/₹2,999",
+      "description": "Get an attractive gift FREE with your purchase. Limited time offer!",
+      "discountPercentage": null,
+      "code": null,
+      "validUntil": null,
+      "limitedTime": true,
       "active": true,
-      "badge": "📚 Seasonal",
-      "color": "teal"
+      "comingSoon": false,
+      "badge": "🎁 FREE Gift",
+      "color": "teal",
+      "tcApply": true
     },
     {
       "id": "offer-4",
@@ -46,9 +55,12 @@
       "discountPercentage": 15,
       "code": "SIBLINGS15",
       "validUntil": "2026-12-31",
-      "active": true,
+      "limitedTime": true,
+      "active": false,
+      "comingSoon": false,
       "badge": "👧👦 Family",
-      "color": "lavender"
+      "color": "lavender",
+      "tcApply": true
     },
     {
       "id": "offer-5",
@@ -57,9 +69,12 @@
       "discountPercentage": 10,
       "code": "FLASH10",
       "validUntil": "2026-12-31",
+      "limitedTime": true,
       "active": false,
+      "comingSoon": false,
       "badge": "⚡ Weekly",
-      "color": "orange"
+      "color": "orange",
+      "tcApply": false
     },
     {
       "id": "offer-6",
@@ -68,9 +83,12 @@
       "discountPercentage": 25,
       "code": "BDAY25",
       "validUntil": "2026-12-31",
-      "active": true,
+      "limitedTime": true,       
+      "active": false,
+      "comingSoon": false,
       "badge": "🎂 Special",
-      "color": "primary"
+      "color": "primary",
+      "tcApply": true
     }
   ]
 }
