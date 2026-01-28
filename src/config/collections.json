@@ -10,47 +10,48 @@
       "products": [
         {
           "id": "boys-1",
-          "name": "Dino Explorer Tee",
-          "image": "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=400&h=400&fit=crop",
+          "name": "Little Gentleman Classic Suit Set",
+          "image": "https://res.cloudinary.com/dcwyt5wls/image/upload/v1769612537/WhatsApp_Image_2026-01-27_at_8.17.20_PM_tktdvj.jpg",
           "colors": ["Blue", "Green", "Orange"],
           "isNew": true,
           "isBestSeller": false,
           "sizeVariants": [
-            { "size": "S", "price": 22.99, "originalPrice": 32.99, "discountLabel": "30% OFF" },
-            { "size": "M", "price": 24.99, "originalPrice": 34.99, "discountLabel": "29% OFF" },
-            { "size": "L", "price": 25.99, "originalPrice": 35.99, "discountLabel": "28% OFF" },
-            { "size": "XL", "price": 26.99, "originalPrice": 36.99, "discountLabel": "27% OFF" },
-            { "size": "XXL", "price": 27.99, "originalPrice": 37.99, "discountLabel": "26% OFF" }            
+            { "size": "S", "price": 1980, "originalPrice": 1980, "discountLabel": null },
+            { "size": "M", "price": 2020, "originalPrice": 2020, "discountLabel": null },
+            { "size": "L", "price": 2060, "originalPrice": 2060, "discountLabel": null },
+            { "size": "XL", "price": 2100, "originalPrice": 2100, "discountLabel": null },
+            { "size": "XXL", "price": 2140, "originalPrice": 2140, "discountLabel": null }            
           ]
         },
         {
           "id": "boys-2",
-          "name": "Space Adventure Hoodie",
-          "image": "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=400&h=400&fit=crop",
+          "name": "FITOUT Royal Prince Blazer Set",
+          "image": "https://res.cloudinary.com/dcwyt5wls/image/upload/v1769612560/WhatsApp_Image_2026-01-27_at_8.17.20_PM_1_dipro4.jpg",
           "colors": ["Navy", "Gray", "Black"],
-          "isNew": false,
-          "isBestSeller": true,
+          "isNew": true,
+          "isBestSeller": false,
           "sizeVariants": [
-            { "size": "S", "price": 37.99, "originalPrice": null, "discountLabel": null },
-            { "size": "M", "price": 39.99, "originalPrice": null, "discountLabel": null },
-            { "size": "L", "price": 41.99, "originalPrice": null, "discountLabel": null },
-            { "size": "XL", "price": 43.99, "originalPrice": null, "discountLabel": null },
-            { "size": "XXL", "price": 45.99, "originalPrice": null, "discountLabel": null }
+            { "size": "S", "price": 2090, "originalPrice": 2090, "discountLabel": null },
+            { "size": "M", "price": 2130, "originalPrice": 2130, "discountLabel": null },
+            { "size": "L", "price": 2170, "originalPrice": 2170, "discountLabel": null },
+            { "size": "XL", "price": 2210, "originalPrice": 2210, "discountLabel": null },
+            { "size": "XXL", "price": 2250, "originalPrice": 2250, "discountLabel": null },
+            { "size": "XXXL", "price": 2290, "originalPrice": 2290, "discountLabel": null }
           ]
         },
         {
           "id": "boys-3",
-          "name": "Comfy Cargo Shorts",
-          "image": "https://images.unsplash.com/photo-1560506840-ec148e82a604?w=400&h=400&fit=crop",
+          "name": "SKYLO Little Champ Casual Party Set",
+          "image": "https://res.cloudinary.com/dcwyt5wls/image/upload/v1769621221/WhatsApp_Image_2026-01-28_at_10.56.26_PM_dqhqcd.jpg",
           "colors": ["Khaki", "Navy", "Olive"],
-          "isNew": false,
+          "isNew": true,
           "isBestSeller": false,
           "sizeVariants": [
-            { "size": "S", "price": 20.99, "originalPrice": 26.99, "discountLabel": "22% OFF" },
-            { "size": "M", "price": 21.99, "originalPrice": 27.99, "discountLabel": "21% OFF" },
-            { "size": "L", "price": 22.99, "originalPrice": 28.99, "discountLabel": "20% OFF" },
-            { "size": "XL", "price": 23.99, "originalPrice": 29.99, "discountLabel": "20% OFF" },
-            { "size": "XXL", "price": 24.99, "originalPrice": 30.99, "discountLabel": "19% OFF" }
+            { "size": "0", "price": 2200, "originalPrice": 2200, "discountLabel": null },
+            { "size": "1", "price": 2230, "originalPrice": 2230, "discountLabel": null },
+            { "size": "2", "price": 2260, "originalPrice": 2260, "discountLabel": null },
+            { "size": "3", "price": 2290, "originalPrice": 2290, "discountLabel": null },
+            { "size": "4", "price": 2320, "originalPrice": 2320, "discountLabel": null }
           ]
         },
         {
@@ -80,32 +81,33 @@
       "products": [
         {
           "id": "girls-1",
-          "name": "Rainbow Twirl Dress",
-          "image": "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?w=400&h=400&fit=crop",
+          "name": "JALARAM Midnight Princess Gown",
+          "image": "https://res.cloudinary.com/dcwyt5wls/image/upload/v1769613208/IMG_7140.JPG_hmaeum.jpg",
           "colors": ["Rainbow", "Pink", "Purple"],
-          "isNew": false,
-          "isBestSeller": true,
+          "isNew": true,
+          "isBestSeller": false,
           "sizeVariants": [
-            { "size": "S", "price": 32.99, "originalPrice": 42.99, "discountLabel": "23% OFF" },
-            { "size": "M", "price": 34.99, "originalPrice": 44.99, "discountLabel": "22% OFF" },
-            { "size": "L", "price": 36.99, "originalPrice": 46.99, "discountLabel": "21% OFF" },
-            { "size": "XL", "price": 38.99, "originalPrice": 48.99, "discountLabel": "20% OFF" },
-            { "size": "XXL", "price": 40.99, "originalPrice": 50.99, "discountLabel": "20% OFF" }
+            { "size": "20", "price": 3020, "originalPrice": 3020, "discountLabel": null },
+            { "size": "22", "price": 3105,  "originalPrice": 3105, "discountLabel": null },
+            { "size": "24", "price": 3190, "originalPrice": 3190, "discountLabel": null },
+            { "size": "26", "price": 3275, "originalPrice": 3275, "discountLabel": null },
+            { "size": "28", "price": 3360, "originalPrice": 3360, "discountLabel": null },
+            { "size": "30", "price": 3445, "originalPrice": 3445, "discountLabel": null }
           ]
         },
         {
           "id": "girls-2",
-          "name": "Floral Summer Set",
-          "image": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=400&h=400&fit=crop",
+          "name": "Babes & Dolls Fairy Flair Layered Dress",
+          "image": "https://res.cloudinary.com/dcwyt5wls/image/upload/v1769621511/WhatsApp_Image_2026-01-28_at_11.01.06_PM_kvhpv8.jpg",
           "colors": ["Pink Floral", "Blue Floral", "Yellow Floral"],
           "isNew": true,
           "isBestSeller": false,
           "sizeVariants": [
-            { "size": "S", "price": 30.99, "originalPrice": null, "discountLabel": null },
-            { "size": "M", "price": 32.99, "originalPrice": null, "discountLabel": null },
-            { "size": "L", "price": 34.99, "originalPrice": null, "discountLabel": null },
-            { "size": "XL", "price": 36.99, "originalPrice": null, "discountLabel": null },
-            { "size": "XXL", "price": 38.99, "originalPrice": null, "discountLabel": null }
+            { "size": "18", "price": 1640, "originalPrice": 1640, "discountLabel": null },
+            { "size": "20", "price": 1650, "originalPrice": 1650, "discountLabel": null },
+            { "size": "22", "price": 1660, "originalPrice": 1660, "discountLabel": null },
+            { "size": "24", "price": 1670, "originalPrice": 1670, "discountLabel": null },
+            { "size": "26", "price": 1680, "originalPrice": 1680, "discountLabel": null }
           ]
         },
         {
@@ -150,31 +152,25 @@
       "products": [
         {
           "id": "newborn-1",
-          "name": "Organic Cotton Onesie Set",
-          "image": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=400&h=400&fit=crop",
+          "name": "Mini Soul Insulated Baby Milk Bottle",
+          "image": "https://res.cloudinary.com/dcwyt5wls/image/upload/v1769622091/WhatsApp_Image_2026-01-28_at_11.07.23_PM_1_a6mry7.jpg",
           "colors": ["White", "Cream", "Sage"],
-          "isNew": false,
+          "isNew": true,
           "isBestSeller": true,
           "sizeVariants": [
-            { "size": "0-3M", "price": 27.99, "originalPrice": 37.99, "discountLabel": "26% OFF" },
-            { "size": "3-6M", "price": 29.99, "originalPrice": 39.99, "discountLabel": "25% OFF" },
-            { "size": "6-9M", "price": 31.99, "originalPrice": 41.99, "discountLabel": "24% OFF" },
-            { "size": "9-12M", "price": 33.99, "originalPrice": 43.99, "discountLabel": "23% OFF" }
+            { "size": "220ml", "price": 450, "originalPrice": 450, "discountLabel": null },
+            { "size": "150ml", "price": 399, "originalPrice": 399, "discountLabel": null }
           ]
         },
         {
           "id": "newborn-2",
-          "name": "Bunny Ears Romper",
-          "image": "https://images.unsplash.com/photo-1503944583220-79d8926ad5e2?w=400&h=400&fit=crop",
+          "name": "Mini Soul Baby Handle Sipper Bottle",
+          "image": "https://res.cloudinary.com/dcwyt5wls/image/upload/v1769622089/WhatsApp_Image_2026-01-28_at_11.07.23_PM_2_g6kuxn.jpg",
           "colors": ["Pink", "Gray", "White"],
           "isNew": true,
           "isBestSeller": false,
           "sizeVariants": [
-            { "size": "0-3M", "price": 24.99, "originalPrice": null, "discountLabel": null },
-            { "size": "3-6M", "price": 26.99, "originalPrice": null, "discountLabel": null },
-            { "size": "6-9M", "price": 28.99, "originalPrice": null, "discountLabel": null },
-            { "size": "9-12M", "price": 30.99, "originalPrice": null, "discountLabel": null },
-            { "size": "12-18M", "price": 32.99, "originalPrice": null, "discountLabel": null }
+            { "size": null, "price": 499, "originalPrice": 499, "discountLabel": null }           
           ]
         },
         {
