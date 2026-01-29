@@ -2,6 +2,13 @@ import { useCallback } from 'react';
 import confetti from 'canvas-confetti';
 import offersData from '@/config/offers.json';
 import { Link } from 'react-router-dom';
+import { Info } from 'lucide-react';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 const Offers = () => {
   const { offers, bannerOffer } = offersData;
@@ -185,9 +192,21 @@ const Offers = () => {
                       </p>
                     )}
                     {offer.tcApply && (
-                      <p className={`text-xs ${offer.color === "secondary" ? "text-foreground/50" : "opacity-60"}`}>
-                        T&C Apply
-                      </p>
+                      <div className={`flex items-center gap-1 text-xs ${offer.color === "secondary" ? "text-foreground/50" : "opacity-60"}`}>
+                        <p>T&C Apply</p>
+                        {offer.tcInfo && (
+                          <TooltipProvider>
+                            <Tooltip>
+                              <TooltipTrigger asChild>
+                                <Info className="w-3 h-3 cursor-help" />
+                              </TooltipTrigger>
+                              <TooltipContent side="right" className="max-w-xs">
+                                {offer.tcInfo}
+                              </TooltipContent>
+                            </Tooltip>
+                          </TooltipProvider>
+                        )}
+                      </div>
                     )}
                   </div>
                 </div>
@@ -246,9 +265,21 @@ const Offers = () => {
                     </p>
                   )}
                   {offer.tcApply && (
-                    <p className="text-xs text-muted-foreground/60 mt-4">
-                      T&C Apply
-                    </p>
+                    <div className="flex items-center gap-1 text-xs text-muted-foreground/60 mt-4">
+                      <p>T&C Apply</p>
+                      {offer.tcInfo && (
+                        <TooltipProvider>
+                          <Tooltip>
+                            <TooltipTrigger asChild>
+                              <Info className="w-3 h-3 cursor-help" />
+                            </TooltipTrigger>
+                            <TooltipContent side="right" className="max-w-xs">
+                              {offer.tcInfo}
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      )}
+                    </div>
                   )}
                 </article>
               ))}

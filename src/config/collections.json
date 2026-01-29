@@ -56,17 +56,15 @@
         },
         {
           "id": "boys-4",
-          "name": "Striped Polo Shirt",
-          "image": "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?w=400&h=400&fit=crop",
+          "name": "MINTU Little Nawab Ethnic Blazer Outfit",
+          "image": "https://res.cloudinary.com/dcwyt5wls/image/upload/v1769671271/WhatsApp_Image_2026-01-29_at_10.07.36_AM_froq81.jpg",
           "colors": ["Red/White", "Blue/White", "Green/White"],
           "isNew": true,
           "isBestSeller": false,
           "sizeVariants": [
-            { "size": "S", "price": 25.99, "originalPrice": null, "discountLabel": null },
-            { "size": "M", "price": 27.99, "originalPrice": null, "discountLabel": null },
-            { "size": "L", "price": 29.99, "originalPrice": 34.33, "discountLabel": null },
-            { "size": "XL", "price": 31.99, "originalPrice": null, "discountLabel": null },
-            { "size": "XXL", "price": 33.99, "originalPrice": null, "discountLabel": null }
+            { "size": "0", "price": 3120, "originalPrice": 3120, "discountLabel": null },
+            { "size": "1", "price": 3170, "originalPrice": 3170, "discountLabel": null },
+            { "size": "2", "price": 3220, "originalPrice": 3220, "discountLabel": null } 
           ]
         }
       ]
@@ -112,32 +110,32 @@
         },
         {
           "id": "girls-3",
-          "name": "Sparkle Unicorn Tee",
-          "image": "https://images.unsplash.com/photo-1471286174890-9c112ffca5b4?w=400&h=400&fit=crop",
+          "name": "Princess Grace Ethnic Flare Dress",
+          "image": "https://res.cloudinary.com/dcwyt5wls/image/upload/v1769661722/WhatsApp_Image_2026-01-29_at_10.07.30_AM_u5gfap.jpg",
           "colors": ["White", "Pink", "Lavender"],
-          "isNew": false,
-          "isBestSeller": true,
+          "isNew": true,
+          "isBestSeller": false,
           "sizeVariants": [
-            { "size": "S", "price": 17.99, "originalPrice": 22.99, "discountLabel": "22% OFF" },
-            { "size": "M", "price": 19.99, "originalPrice": 24.99, "discountLabel": "20% OFF" },
-            { "size": "L", "price": 20.99, "originalPrice": 25.99, "discountLabel": "19% OFF" },
-            { "size": "XL", "price": 21.99, "originalPrice": 26.99, "discountLabel": "19% OFF" },
-            { "size": "XXL", "price": 23.99, "originalPrice": 28.99, "discountLabel": "17% OFF" }
+            { "size": "16", "price": 2320, "originalPrice": 2320, "discountLabel": null },
+            { "size": "18", "price": 2360, "originalPrice": 2360, "discountLabel": null },
+            { "size": "20", "price": 2400, "originalPrice": 2400, "discountLabel": null },
+            { "size": "22", "price": 2440, "originalPrice": 2440, "discountLabel": null }
           ]
         },
         {
           "id": "girls-4",
-          "name": "Cozy Cardigan",
-          "image": "https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?w=400&h=400&fit=crop",
+          "name": "Dear Girl Ethnic Charm Palazzo Dress",
+          "image": "https://res.cloudinary.com/dcwyt5wls/image/upload/v1769670290/WhatsApp_Image_2026-01-29_at_10.07.31_AM_cyglau.jpg",
           "colors": ["Cream", "Blush", "Mint"],
           "isNew": true,
           "isBestSeller": false,
           "sizeVariants": [
-            { "size": "S", "price": 34.99, "originalPrice": null, "discountLabel": null },
-            { "size": "M", "price": 36.99, "originalPrice": null, "discountLabel": null },
-            { "size": "L", "price": 38.99, "originalPrice": null, "discountLabel": null },
-            { "size": "XL", "price": 40.99, "originalPrice": null, "discountLabel": null },
-            { "size": "XXL", "price": 42.99, "originalPrice": null, "discountLabel": null } 
+            { "size": "16", "price": 2299, "originalPrice": 2299, "discountLabel": null },
+            { "size": "18", "price": 2340, "originalPrice": 2340, "discountLabel": null },
+            { "size": "20", "price": 2380, "originalPrice": 2380, "discountLabel": null },
+            { "size": "22", "price": 2420, "originalPrice": 2420, "discountLabel": null },
+            { "size": "24", "price": 2460, "originalPrice": 2460, "discountLabel": null },
+            { "size": "26", "price": 2500, "originalPrice": 2500, "discountLabel": null } 
           ]
         }
       ]
@@ -175,15 +173,13 @@
         },
         {
           "id": "newborn-3",
-          "name": "Snuggle Sleep Sack",
-          "image": "https://images.unsplash.com/photo-1560506840-ec148e82a604?w=400&h=400&fit=crop",
+          "name": "HOOPA 2-in-1 Infant Carrier Pink | Infant Carrier",
+          "image": "https://res.cloudinary.com/dcwyt5wls/image/upload/v1769671908/shopping_z3kwdt.webp",
           "colors": ["Stars", "Clouds", "Animals"],
-          "isNew": false,
+          "isNew": true,
           "isBestSeller": false,
           "sizeVariants": [
-            { "size": "0-6M", "price": 32.99, "originalPrice": 40.99, "discountLabel": "20% OFF" },
-            { "size": "6-12M", "price": 34.99, "originalPrice": 42.99, "discountLabel": "19% OFF" },
-            { "size": "12-18M", "price": 36.99, "originalPrice": 44.99, "discountLabel": "18% OFF" }
+            { "size": null, "price": 1299, "originalPrice": 1299, "discountLabel": null }             
           ]
         },
         {

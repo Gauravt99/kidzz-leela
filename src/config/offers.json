@@ -1,8 +1,8 @@
 {
   "bannerOffer": {
-    "title": "Summer Sale! 🌸",
-    "description": "Up to 10% off on all summer collections",
-    "code": "SUMMER10",
+    "title": "Bank Offer 💳",
+    "description": "Get 5% off on HDFC & SBI Credit Cards",
+    "code": "CARD05",
     "active": true
   },
   "offers": [
@@ -18,7 +18,8 @@
       "comingSoon": false,
       "badge": "💎 FREE Silver Coin",
       "color": "lavender",
-      "tcApply": true
+      "tcApply": true,
+      "tcInfo": "Only one offer can be redeemed per purchase."
     },
     {
       "id": "offer-2",
@@ -32,7 +33,8 @@
       "comingSoon": false,
       "badge": "👶 Special Gift",
       "color": "secondary",
-      "tcApply": true
+      "tcApply": true,
+      "tcInfo": "Only one offer can be redeemed per purchase."
     },
     {
       "id": "offer-3",
@@ -46,7 +48,8 @@
       "comingSoon": false,
       "badge": "🎁 FREE Gift",
       "color": "teal",
-      "tcApply": true
+      "tcApply": true,
+      "tcInfo": "Only one offer can be redeemed per purchase."
     },
     {
       "id": "offer-4",
@@ -60,7 +63,8 @@
       "comingSoon": false,
       "badge": "👧👦 Family",
       "color": "lavender",
-      "tcApply": true
+      "tcApply": true,
+      "tcInfo": "Only one offer can be redeemed per purchase."
     },
     {
       "id": "offer-5",
@@ -74,7 +78,8 @@
       "comingSoon": false,
       "badge": "⚡ Weekly",
       "color": "orange",
-      "tcApply": false
+      "tcApply": false,
+      "tcInfo": "Only one offer can be redeemed per purchase."
     },
     {
       "id": "offer-6",
@@ -88,7 +93,8 @@
       "comingSoon": false,
       "badge": "🎂 Special",
       "color": "primary",
-      "tcApply": true
+      "tcApply": true,
+      "tcInfo": "Only one offer can be redeemed per purchase."
     }
   ]
 }
